@@ -1,6 +1,7 @@
 # Unary Operator
 
 x = 10
+x = True
 print(x)
 
 a = -x

@@ -1,12 +1,15 @@
 # Relational Operator --> {<, >, <=, >=, ==, !=}
 
-x = 2
-y = 5
+x = False
+y = True
+
+x = 0
+y = 1
 
 print(x>y)
 print(x<y)
-print(x<=y)
 print(x>=y)
+print(x<=y)
 print(x==y)
 print(x!=y)
 
