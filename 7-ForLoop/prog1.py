@@ -17,12 +17,12 @@ for x in range(10,5):
 
 for x in range(1,15,3):
     print(x, end=" ")
-    
+print()    
 # O/p: 1 4 7 10 13
 
 for x in range(10,3,-2):
     print(x, end=" ")
-    
+print()   
     
 # In for loop variable is indicates global scope -->
 
