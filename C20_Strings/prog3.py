@@ -141,3 +141,55 @@ print(st1.rstrip())
 print(st.split())
 
 # 39.
+st1 = "hey!\nhello\tpune\n"
+print(st1.splitlines(), st1.splitlines(True))
+
+# 40.
+print(s.startswith('Hel'))
+
+# 41.
+st1 = "  hi  "
+print(st1.strip())          # leading and trailing whitespace removed.
+
+# 42.
+print(s.swapcase())
+
+# 43.
+print(s.title())
+
+# 44.
+print(s.translate({'H':None, 'H':'l', 108:65, 76:97}))  # Only ascii value conversion
+
+# 45.
+print(s.translate(s.maketrans('H','T', 'l')))       # maketrans -> return a translation table usable for str.translate().
+print(s.translate(s.maketrans('H','T',)))           # Even ',' extra typed at the end (not front) python didn't give error
+print(s.translate(s.maketrans({'H':'T', 108:65, 76:97})))
+
+# 46.
+print(s.upper())
+
+# 47.
+print(s.zfill(15))      # with 0 filling at left
+
+# 48.
+print((str.mro()))            # method resolution order (MRO)->The MRO defines the order in which base classes are searched when looking for a method in a class hierarchy
+class A:
+    def show(self):
+        print("A")
+
+class B(A):
+    def show(self):
+        print("B")
+
+class C(A):
+    def show(self):
+        print("C")
+
+class D(B, C):
+    pass
+
+# Using the .mro() method
+mro_result = D.mro()
+
+# Printing the result
+print("Method Resolution Order:", mro_result)
